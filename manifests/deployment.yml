@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: next-deployment
+spec:
+  replicas: 5 
+  selector:
+    matchLabels:
+      app: next
+  template:
+    metadata:
+      labels:
+        app: next
+    spec:
+      containers:
+        - name: next
+          image: sapkotabraz/next-app:v1 
+          ports:
+            - containerPort: 80
