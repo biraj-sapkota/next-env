@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: next-deployment
 spec:
-  replicas: 5 
+  replicas: 2 
   selector:
     matchLabels:
       app: next
@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: next
-          image: sapkotabraz/next-app:v2 
+          image: sapkotabraz/next-app:v1 
           ports:
             - containerPort: 80
