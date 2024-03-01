@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: next
-          image: sapkotabraz/next-app:v1 
+          image: sapkotabraz/next-app:v2 
           ports:
             - containerPort: 80
